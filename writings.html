@@ -1,0 +1,56 @@
+<head>
+    <title>Lalafell Party</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="MHKN's website for artwork, writings and freebie projects">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body onload="footer(), navi(), more()">
+    <center>
+<table border="0" cellspacing="0" cellpadding="0" width="810" bgcolor="">
+    <thead>
+      <tr>
+        <td><img src="/assets/header.png" alt="Lalafell Party"></td>
+      </tr>
+    </thead>
+    </table>
+
+    <table border="0" cellspacing="0" cellpadding="0" width="810" bgcolor="">
+        <tbody>
+          <tr>
+            <td width="3px;"></td>
+            <td width="200px;" id="navi"></td>
+            <td width="3px;"></td>
+            <td width="500px;"><center><div class="box">
+                <div class="header">Writings</div>
+                <center>
+                    Everything I wrote so far, from essays to callouts to everything else, and which are longer than an average Fedi shitpost.<br>
+            </div>
+
+        </center></td>
+            <td width="3px;"></td>
+            <td width="200px;" id="more"></td>
+          </tr>
+          <tr>
+            <td width="3px;"></td>
+            <td colspan="6" id="foot"></td>
+          </tr>
+        </tbody>
+        </table>
+    </center>
+
+<script>
+    $(function footer() {
+        $("#foot").load("/end.html");
+    });
+    
+    $(function navi() {
+        $("#navi").load("/navi.html");
+    });
+    $(function more() {
+        $("#more").load("/more.html");
+    });
+    </script>
+</body>

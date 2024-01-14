@@ -1,25 +1,63 @@
 <head>
-    <title>Mahi Resort's Art</title>
-    <link rel="stylesheet" href="/style2.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <meta charset="UTF-8"> 
+    <title>Lalafell Party</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="MHKN's website for artwork, writings and freebie projects">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
-<body onload="play()">
-<div class="center" style="width: 900px; top:1%">
-    <img src="/assets/ui/illus.png">
-    <a href="https://files.catbox.moe/qf3gfc.png"><img src="/assets/art/bizu.png" style="width:200px;"></a>
-<a href="https://files.catbox.moe/sve1wj.png"><img src="/assets/art/bree.png" style="width:200px;"></a>
-<br>
-<center><a href="/art/2023.html">2023</a>
-  <br>
-  <a href="/index.html"><img src="/assets/ui/back.png"></a></center>
+
+<body onload="footer(), navi(), more()">
+    <center>
+<table border="0" cellspacing="0" cellpadding="0" width="810" bgcolor="">
+    <thead>
+      <tr>
+        <td><img src="/assets/header.png" alt="Lalafell Party"></td>
+      </tr>
+    </thead>
+    </table>
+
+    <table border="0" cellspacing="0" cellpadding="0" width="810" bgcolor="">
+        <tbody>
+          <tr>
+            <td width="3px;"></td>
+            <td width="200px;" id="navi"></td>
+            <td width="3px;"></td>
+            <td width="500px;"><center><div class="box">
+                <div class="header">Gallery</div>
+This gallery only has works that best represent my skills.<br><br>
+Full collection is unavailable at the moment.<br><br>
+<a href="https://files.catbox.moe/qf3gfc.png" class="gfx"><img src="/assets/art/bizu.png"></a>
+<a href="https://files.catbox.moe/6f1n3z.png" class="gfx"><img src="/assets/art/carbo.png"></a>
+<a href="https://files.catbox.moe/ezf3cf.png" class="gfx"><img src="/assets/art/creep.png"></a>
+<a href="https://files.catbox.moe/dmweaw.png" class="gfx"><img src="/assets/art/mahkin.png"></a>
+<a href="https://files.catbox.moe/jfkkyb.png" class="gfx"><img src="/assets/art/pika.png"></a>
+<a href="https://files.catbox.moe/s2in8g.png" class="gfx"><img src="/assets/art/sami.png"></a>
+
+            </div>
+
+        </center></td>
+            <td width="3px;"></td>
+            <td width="200px;" id="more"></td>
+          </tr>
+          <tr>
+            <td width="3px;"></td>
+            <td colspan="6" id="foot"></td>
+          </tr>
+        </tbody>
+        </table>
+    </center>
 
 <script>
-    function play() {
-      var audio = document.getElementById("start");
-      audio.play();
-    }
-  </script>
-  <audio id="start" src="https://vgmsite.com/soundtracks/mario-paint-game-rip/awjlrrjfyv/20%20Start%20Fanfare.mp3"></audio>
-</div>
+    $(function footer() {
+        $("#foot").load("/end.html");
+    });
+    
+    $(function navi() {
+        $("#navi").load("/navi.html");
+    });
+    $(function more() {
+        $("#more").load("/more.html");
+    });
+    </script>
 </body>

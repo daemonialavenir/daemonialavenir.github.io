@@ -1,47 +1,72 @@
 <head>
-    <title>Mahi Resort</title>
-    <link rel="stylesheet" href="/style2.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <meta charset="UTF-8"> 
+    <title>Lalafell Party</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="MHKN's website for artwork, writings and freebie projects">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
-<body onload="play()">
-<div class="center" style="width: 900px; top:1%">
-    <center><img src="/assets/ui/intro.png">
-<div style="display:flex; width: 600px;">
-<div style=" width: 205px;"><img src="/assets/ui/64dd_me.png" style="width:200px;"></div> 
-<div style=" width: 355px;"><b>Name(s)</b>: Fami, Mahi, Nikita <img src="https://www.mazeguy.net/objects/scroll.gif"><br>
-<b>Species</b>: cat thing (human flesh) <img src="https://www.mazeguy.net/animal/pawprint.gif"><br>
-<b>Pronouns</b>: it/its | 彼/あやつ <img src="https://www.mazeguy.net/flags/lgbtpride.gif"><br>
-<b>Age</b>: 20s <img src="https://www.mazeguy.net/zodiac/virgo.gif"><br>
-<b>Favorite Color</b>: Black, white, blue, red <img src="https://www.mazeguy.net/office/fountainpen.gif"><br>
-<b>Favorite Device</b>: Nintendo 3DS <img src="https://www.mazeguy.net/videogame/pokeball.gif"><br>
-<br>
-<i>hello cool webweavers!</i><br><br>
-<a href="https://devils.gay/"><img src="/assets/addon/devils.gif"></a> <a href="https://bapril.pl/"><img src="/assets/addon/bapril_badge.png"></a>  	<a href="http://www.mazeguy.net" target="_blank"><img src="http://www.mazeguy.net/links/mazeguy88x31.gif" width="88" height="31" border="0" alt="Mazeguy Smilies"></a>
-</div>
-</div>
-<br>
-I have started making art since 2016, with significant breaks in-between.<br>
-Besides usual illustrations (Pokemon fanwork, furry art, character design) I also try<br>
-best in vector art (as you can see with NeoRat emoji set).<br><br>
 
-I figure out how to live a life as a disabled individual in the incredibly shitty society.<br>
-I'm not a big fan of political labels, but I have an acute allergy for bigotry.<br>
-Especially classism and ableism.
+<body onload="footer(), navi(), more()">
+    <center>
+<table border="0" cellspacing="0" cellpadding="0" width="810" bgcolor="">
+    <thead>
+      <tr>
+        <td><img src="/assets/header.png" alt="Lalafell Party"></td>
+      </tr>
+    </thead>
+    </table>
 
-<br><br>
-I make art for a living (for now at least). You can find info about Terms of Service and<br>
-pricing here: <a href="/comm.html">Meow :3</a><br>
-<a href="https://ko-fi.com/mahiwa"><img src="/assets/addon/kofi.png" alt="Support me on ko-fi" style="z-index:10;">
-<br><br>
-<a href="/index.html"><img src="/assets/ui/back.png"></a></center>
+    <table border="0" cellspacing="0" cellpadding="0" width="810" bgcolor="">
+        <tbody>
+          <tr>
+            <td width="3px;"></td>
+            <td width="200px;" id="navi"></td>
+            <td width="3px;"></td>
+            <td width="500px;"><center><div class="box">
+                <div class="header">About me!</div>
+                <center>
+
+                   
+                   <b>Name(s)</b>: Fami, Mahi, Niki <img src="https://www.mazeguy.net/objects/scroll.gif"><br>
+                    <b>Species</b>: cat thing (human flesh) <img src="https://www.mazeguy.net/animal/pawprint.gif"><br>
+                    <b>Pronouns</b>: it/its | 彼/あやつ <img src="https://www.mazeguy.net/flags/lgbtpride.gif"><br>
+                    <b>Age</b>: 20s <img src="https://www.mazeguy.net/zodiac/virgo.gif"><br>
+                    <b>Favorite Color</b>: Black, white, blue, red <img src="https://www.mazeguy.net/office/fountainpen.gif"><br>
+                    <b>Favorite Device</b>: Nintendo 3DS <img src="https://www.mazeguy.net/videogame/pokeball.gif"><br>
+                    <br>
+
+                    I have started making art since 2016, with significant breaks in-between.<br>
+                    Besides usual illustrations (Pokemon fanwork, furry art, character design) I also try<br>
+                    best in vector art (as you can see with NeoRat emoji set).<br><br>
+                    
+                    I figure out how to live a life as a disabled individual in the incredibly shitty society.<br>
+                    I'm not a big fan of political labels, but I have an acute allergy for bigotry.<br>
+                    Especially classism and ableism.
+            </div>
+
+        </center></td>
+            <td width="3px;"></td>
+            <td width="200px;" id="more"></td>
+          </tr>
+          <tr>
+            <td width="3px;"></td>
+            <td colspan="6" id="foot"></td>
+          </tr>
+        </tbody>
+        </table>
+    </center>
 
 <script>
-    function play() {
-      var audio = document.getElementById("start");
-      audio.play();
-    }
-  </script>
-  <audio id="start" src="https://vgmsite.com/soundtracks/mario-paint-game-rip/awjlrrjfyv/20%20Start%20Fanfare.mp3"></audio>
-</div>
+    $(function footer() {
+        $("#foot").load("/end.html");
+    });
+    
+    $(function navi() {
+        $("#navi").load("/navi.html");
+    });
+    $(function more() {
+        $("#more").load("/more.html");
+    });
+    </script>
 </body>
