@@ -63,3 +63,13 @@ a:hover{
 .gfx:before{
     content:"";
 }
+
+details:before{
+  content:none;
+}
+
+.lis{
+  display:flex;
+  padding:3px;
+  
+}
