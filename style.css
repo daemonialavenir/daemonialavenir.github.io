@@ -16,8 +16,8 @@
 html{
     background-image: url("/assets/bg.png");
 
-    font-family: "snes", "MS UI Gothic", sans-serif;
-    font-size:12px;
+    font-family:"MS UI Gothic", sans-serif;
+    font-size:11px;
     image-rendering: pixelated;
       image-rendering: -moz-crisp-edges;
       image-rendering: crisp-edges;
@@ -50,14 +50,14 @@ padding: 6px;
 margin-bottom:2px;
 }
 a{
-    color:rgb(126, 81, 168);
+    color:rgb(98, 0, 190);
     text-decoration: none;
 }
 a:before{
     content:"⚧ "
 }
 a:hover{
-    color:rgb(82, 22, 138)
+    color:rgb(153, 51, 248)
 }
 
 .gfx:before{
