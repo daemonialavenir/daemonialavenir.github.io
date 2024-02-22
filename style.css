@@ -1,75 +1,106 @@
 @font-face {
-    font-family: hel;
-    src: url("https://files.catbox.moe/4baz5p.ttf");
+    font-family: visitor;
+    src: url(https://files.catbox.moe/pt8qkl.ttf);
   }
 
   @font-face {
-    font-family: snes;
-    src: url("https://files.catbox.moe/agkdst.ttf");
+    font-family: pzt;
+    src: url(https://files.catbox.moe/8x7sai.otf);
   }
-
-  @font-face {
-    font-family: pmb;
-    src: url("https://files.catbox.moe/ddj2jz.ttf");
-  }
-
 html{
-    background-image: url("/assets/bg.png");
-
-    font-family:"MS UI Gothic", sans-serif;
-    font-size:11px;
-    image-rendering: pixelated;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: crisp-edges;
-      font-smooth: never;
-      -webkit-font-smoothing: none;
+    background-image: url(/assets/bg.png);
 }
-
-body{
+body {
     width: 900px;
     position: relative;
     display: block;
     margin-left:auto;
     margin-right:auto;
+    text-align:center;
+    font-family:"pzt", sans-serif;
+    font-size:16px;
+
+    }
+
+
+.big{
+    width: 900px;
+
+    padding: 3px;
 }
 
-.header{
-border: 1px solid rgb(92, 58, 172);
-background-color: rgba(39, 255, 244, 0.226);
-color: rgb(20, 19, 37);
-padding: 2px;
-font-family: "pmb";
-margin-bottom:5px;
+.navbar{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    height:10px;
+    padding: 3px;
+text-align: right;
+font-size:10px;
+    font-family: "visitor";
 }
 
-.box{
-border: 1px dotted rgb(92, 58, 172);
-background-color: rgba(230, 233, 255, 0.829);
-color: rgb(40, 38, 71);
-padding: 6px;
-margin-bottom:2px;
+.logo{
+    height:160px;
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid black;
 }
+
+.main{
+    line-height:170%;
+    display:flex;
+letter-spacing:0px;
+text-shadow: 1px 2px black;
+}
+
+.twomain{
+    background-color: rgb(27, 67, 128);
+    width: 720px;
+    min-height:300px;
+    padding: 5px;
+    border: 1px solid black;
+    border-top:0px;
+    border-bottom:0px;
+    color:rgb(255, 255, 255);
+}
+
+.twomain a{
+    color:white;
+    text-decoration: underline;
+}
+
+.right a{
+    color:white;
+    text-decoration: underline;
+}
+.right{
+    background-color: rgb(61, 89, 212);
+    width: 180px;
+    padding: 3px;
+    border: 1px solid black;
+    border-top:0px;
+    border-left:0px;
+    border-bottom:0px;
+    color:white;
+}
+
+.foot{
+    background-color: rgb(223, 237, 255);
+    padding: 1px;
+    border: 1px solid black;
+    height:31px;
+}
+.navbar a{
+    color: white;
+    font-weight: 100;
+}
+
 a{
-    color:rgb(98, 0, 190);
-    text-decoration: none;
+    color:rgb(67, 16, 150);
+    text-decoration:wavy
 }
-a:before{
-    content:"⚧ "
-}
+
 a:hover{
-    color:rgb(153, 51, 248)
-}
-
-.gfx:before{
-    content:"";
-}
-
-details:before{
-  content:none;
-}
-
-.lis{
-  display:flex;
-  padding:3px;
-  
+    color:rgb(24, 4, 43);
+    text-decoration: underline;
 }
