@@ -1,20 +1,5 @@
-@font-face {
-    font-family: visitor;
-    src: url(https://files.catbox.moe/pt8qkl.ttf);
-  }
-
-  @font-face {
-    font-family: pzt;
-    src: url(https://files.catbox.moe/h1dkd9.ttf);
-  }
-
-  
-  @font-face {
-    font-family: h1f;
-    src: url(https://files.catbox.moe/8x7sai.otf);
-  }
 html{
-    background-image: url(/assets/bg.png);
+    background-color:white;
 }
 body {
     width: 900px;
@@ -23,101 +8,90 @@ body {
     margin-left:auto;
     margin-right:auto;
     text-align:center;
-    font-family: "MS UI Gothic", Tahoma, sans-serif;
-    font-size: 16px;
-    line-height: 13px;
+    font-family: "Yu Mincho";
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 20px;
 
     }
 
+    .head{
+        display:flex;
+    }
 
-.big{
-    width: 900px;
+    .onemuri{
+        font-size:100px;
+        line-height: 90px;
+        background-color: black;
+        color:white;
+        width:105px;
+        padding:3px;
+        padding-right:15px;
+        z-index:10;
+        position:absolute;
+        left:30px;
+    }
 
-    padding: 3px;
-}
+    .land{
+        position:absolute;
+        left:118px;
+        top:50px;
+    }
 
-.navbar{
-    background-color: rgb(0, 0, 0);
+    a{
+        color:black;
+        
+    }
+
+    .main{
+        width:900px;
+        position:absolute;
+        top:310px;
+        display:flex;
+        min-height:440px;
+    }
+
+    .sidebar{
+        width: 180px;
+        color:white;
+        background-color: black;
+        padding: 4px;
+    }
+
+    .frame{
+        width:590px;
+
+        margin-left:10px;
+        padding:5px;
+    }
+
+    .foot{
+        color:black;
+        background-color: white;
+        width:800px;
+        position:absolute;
+        top:450px;
+
+    }
+
+.sidebar a{
     color:white;
-    height:10px;
-    padding: 3px;
-text-align: right;
-font-size:10px;
-    font-family: "visitor";
 }
 
-.logo{
-    height:160px;
-    background-color: rgb(255, 255, 255);
-
-    border: 1px solid black;
-}
-
-.main{
-    line-height:170%;
-    display:flex;
-letter-spacing:0px;
-text-shadow: 1px 1px black;
-}
-
-.twomain{
-    background-color: rgb(27, 67, 128);
-    width: 720px;
-    min-height:300px;
-    padding: 5px;
-    border: 1px solid black;
-    border-top:0px;
-    border-bottom:0px;
-    color:rgb(255, 255, 255);
-}
-
-.twomain a{
+.frame h2{
     color:white;
-    text-decoration: underline;
+    background-color: black;
+    padding:8px;
+    width:71%;
+    font-size:28px;
 }
 
-.right a{
-    color:white;
-    text-decoration: underline;
-}
-.right{
-    background-color: rgb(61, 89, 212);
-    width: 180px;
-    padding: 3px;
-    border: 1px solid black;
-    border-top:0px;
-    border-left:0px;
-    border-bottom:0px;
-    color:white;
+.ending{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
-.foot{
-    background-color: rgb(223, 237, 255);
-    padding: 1px;
-    border: 1px solid black;
-    height:31px;
-}
-.navbar a{
-    color: white;
-    font-weight: 100;
-}
-
-a{
-    color:rgb(67, 16, 150);
-    text-decoration:wavy
-}
-
-a:hover{
-    color:rgb(24, 4, 43);
-    text-decoration: underline;
-}
-
-h1{
-    font-family: "h1f", fantasy;
-}
-h2{
-    font-family: "h1f", fantasy;
-}
-h3{
-    font-family: "h1f", fantasy;
+.onemuri{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
