@@ -1,0 +1,73 @@
+<head>
+    <title>The End of Nintendo Network</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <link rel="me" href="https://cooltrans.men/onemuri">
+    <meta name="description" content="You can (not) exchange friend codes">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body style="width:650px;">
+    <!-- Display the countdown timer in an element -->
+    <br><h2>Time until 3DS/Wii U online shuts down</h2><br><center>
+<p id="demo" style="font-size:30px; background-color: black; color:white; padding:10px; width:300px;"></p>
+<br><br>
+<marquee scrollamount="4">
+    <img src="https://static.wikia.nocookie.net/animalcrossing/images/8/84/HNI_0043B.JPG" style="height:180px;">
+<img src="https://lh6.googleusercontent.com/proxy/nXdVK9zlCtY9lhJq7S4Po5fUWX0b4VBEsIJv5QlXCx4SpdhWoQkvD5RLBxazLAm2M_RA2EDopELOzgc0nQ" style="height:180px;">
+<img src="https://pm1.aminoapps.com/6904/b25f15c02d2523658576065112166964774148b4r1-2048-1536v2_hq.jpg" style="height:180px;">
+<img src="https://m.media-amazon.com/images/I/51E5dooSV2L._AC_UF1000,1000_QL80_.jpg" style="height:180px;">
+<img src="https://www.serebii.net/badgeeu25.jpg" style="height:180px;">
+<img src="https://www.nintendoworldreport.com/media/39037/4/1.jpg" style="height:180px;">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji7wHsCy6FvwLfVzq1zZYzRKfOHFWHv1Hf9sc1dtJBFYRav5eHOjid_GXvJT19LzThGyDTlEoxDOncbtTvqydSjqIT2J9h7FjPJG3SeMwFMvV-b_EaAi6gp9H8vFbHaiZGBDzHUIuT_oY/s1600/team-kirby-clash-deluxe-2.jpg" style="height:180px;">
+<img src="https://www.jvgs.net/features/3ds-options.jpg" style="height:180px;">
+<img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-sun-pokemon-moon/c/c2/Extra007.png" style="height:180px;">
+<img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-sun-pokemon-moon/d/d7/Extra014.png" style="height:180px;">
+<img src="https://www.smashbros.com/wiiu-3ds/sp/us/images/howto/gamemode1-1.jpg" style="height:180px;">
+<img src="https://pm1.aminoapps.com/6051/1e4377ac85582c303e78174f5e451cfd70478c0a_hq.jpg" style="height:180px;">
+<img src="https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/games_6/nintendo_3ds_12/3ds_mariokart7/CI_3DS_MarioKart7_07.jpg" style="height:180px">
+<img src="https://cdn.vox-cdn.com/thumbor/QDocAPT2Auin807PmSA939SknAM=/0x0:1647x927/1200x800/filters:focal(693x333:955x595)/cdn.vox-cdn.com/uploads/chorus_image/image/66206641/Capture4.0.jpg" style="height:180px;">
+<img src="https://www.serebii.net/xy/friends.jpg" style="height:180px;">  
+<img src="https://assets1.ignimgs.com/2015/10/24/3dsztfhscrn09bmpjpgcopyjpg-9b3661.jpg" style="height:180px;">
+<img src="https://images.nintendolife.com/screenshots/75753/large.jpg" style="height:180px;">
+<img src="https://www.gameinformer.com/sites/default/files/2023/03/27/3c1b182d/wii_u_eshop_screenshot3.jpg" style="height:180px;">
+<img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/animal-crossing-3ds/5/5b/New_leaf_2_HNI_0015.JPG" style="height:180px;">
+<img src="https://media.cooltrans.men/media/8021e55f99532289ae25349f162534674d7a14d233043e480d98cef4aa6ea26e.png">
+<img src="https://media.cooltrans.men/media/212e592f30e00e1d2eef5ea3f28ba767a4fc7ed05c19e5b8c87f2d976f6a0eca.png" style="height:180px;">
+
+</marquee>   
+
+<audio autoplay src="https://epsilon.vgmsite.com/soundtracks/pokemon-ruby-sapphire-and-emerald-remastered-soundtrack-gba-gamerip-2002-2005/agjsbfmodq/15.%20Credits.mp3"></audio>
+</center>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date('Apr 9, 2024 00:00:00 GMT+00:00').getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "It's all over.";
+  }
+}, 1000);
+</script>
+</body>
