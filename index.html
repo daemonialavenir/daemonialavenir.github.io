@@ -1,119 +1,28 @@
 <head>
-    <title>お眠り</title>
-    <link rel="stylesheet" href="/style.css" type="text/css">
+    <title>Faraway Island</title>
+    <link rel="stylesheet" href="/style2.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta charset="UTF-8">
     <link rel="me" href="https://cooltrans.men/onemuri">
-    <meta name="description" content="Glory Be to All Who Come Here">
+    <link rel="me" href="https://mirageisland.nl/prinsje">
+    <meta name="description" content="kittyhood! drawings! a little house in the webspace!">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
-<body>
-   <div class="head">
-<div class="onemuri">お<br>眠<br>り</div>
-<div class="land"><BR><img src="/assets/header.png"><br><br>
-    <a href="/">HOME</a> || <a href="/about.html">ABOUT</a> || <a href="/art.html">ARTWORK</a> || 
-    <a href="/write.html">WRITINGS</a> || <a href="https://ko-fi.com/onemuri">SUPPORT</a>
+<body><center><div class="main" style="position:absolute; left:200px;">
+  <img src="/assets/logo.png" style="z-index:10; position:absolute; left:140px;">
+   <div class="center" style="width:400px; top:130px;"><span style="font-size:20px;">You are now entering the <b>Faraway Island.</b></span><br><br>
+  The current layout is: Miiverse-FE!<br>Here is a few things about this corner of the internet:
+<ul>
+  <li>This site uses JavaScript in order to load the navbar and to make the lastFM widget work.</li>
+<li>This site is not optimized for mobile displays, displays less than 1000px in width and non-standard browsers.</li>
+<li>Recommended browser to access this website is Firefox on Windows.</li>
+<li>Some images may not have alt-text.</li>
 
-   </div>
+</ul>
 
-   <div class="main">
-    <div class="sidebar">
-<h4>Playing:</h4>
-       <center><div class="nowplayingcard" style="margin-left:10px;">
-            <div class="nowplayingcontainer-inner" style="display:flex;">
-                <img id="trackart" src="https://lastfm.freetls.fastly.net/i/u/174s/56d3c26cf95f7c8a8b09aa9a80dd2b84.png" width="50px;" height="50px;">
-                <div class="trackInfo">
-                    <a id="tracktitle" class="gfx" href="https://www.last.fm/music/Folder+5/_/Gemini" title="Gemini by Folder 5" target="_blank" style="font-size: 10px;">Gemini</a><br>
-                    <a href="#" id="trackartist" class="gfx" style="font-size:9px;" title="Artist : Folder 5"> Folder 5</a>
-                </div>
-            </div>
-        </div> </center> <br>
-<span class="ending">連帯と忍耐だけが勝利をもたらす<br><br>
-    集団は個人主義の支配を崩壊させる
-    <br><br>
-    組合は現代の奴隷制を崩壊させる
-</span>
-        
-    </div>
-    <div class="frame"><h2 style="rotate:359deg;">Glory Be to All Who Come Here</h2>
-    This is not a place of honor. No highly estemeed deed is commemorated here. Nothing valued is here.
-<br>
-<br>
-What this is, however, is a personal place on the Digital Earth of a certain
-defector from the cult of sameness and sanity.
-<br><br><br>
-This is a place of worship for the mentally disordered and the disabled... <br>
-... a haven for the perverted and the transitioned ... <br>
-... a sanctuary for the impoverished and the homeless ...
-
-<br><br><br>
-In no way this is a home for the sensitive, the rich and the bigoted whose only purpose is to harm.
-<br><br>
-<img src="/assets/button.png"></div><br>
-    <div class="foot">
-        <a href="https://creaturesinsi.de/"><img src="/assets/buttons/creatures.png"></a>
-<a href="https://devils.gay/"><img src="/assets/buttons/devils.gif"></a>
-<a href="https://sleepy.ink/"><img src="/assets/buttons/sleepy.png"></a>
-        <a href="https://drewsh.com/"><img src="/assets/buttons/lisp_alien_drew.gif" style="width:88px;"></div>
-   </div>
-
-
-   <script>
-    var lastfmData = {
-  baseURL:
-    "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
-  // Your Last.fm Username
-  user: "mahkin",
-  // Your API key
-  api_key: "6b64fb0e7e10185af223f838197687e4",
-  additional: "&format=json&limit=1"
-};
-
-var getSetLastFM = function() {
-  $.ajax({
-    type: "GET",
-    url:
-      lastfmData.baseURL +
-      lastfmData.user +
-      "&api_key=" +
-      lastfmData.api_key +
-      lastfmData.additional,
-    dataType: "json",
-    success: function(resp) {
-      var recentTrack = resp.recenttracks.track[0];
-      var formatted =
-        "<img src='https://files.catbox.moe/41escm.png'> " + recentTrack.name;
-      $("a#tracktitle")
-        .html(formatted)
-        .attr("href", recentTrack.url)
-        .attr("title", recentTrack.name + " by " + recentTrack.artist["#text"])
-        .attr("target", "_blank");
-
-      var artistFormatted =
-        "<img src='https://files.catbox.moe/h4su1r.png'> " +
-        recentTrack.artist["#text"];
-      $("a#trackartist")
-        .html(artistFormatted)
-        .attr("title", "Artist : " + recentTrack.artist["#text"]);
-      $("img#trackart").attr("src", recentTrack.image[2]["#text"]);
-    },
-    error: function(resp) {
-      $("a#tracktitle").html(
-        "<img src='https://i.imgur.com/EgWjJry.png'>" + "Silence!"
-      );
-      $("img#trackart").attr("src", "https://i.imgur.com/Q6cCswP.jpg");
-      var artistFormatted =
-        "<img src='https://i.imgur.com/fae5XZA.png'>Prashant Shrestha";
-      $("a#trackartist")
-        .html(artistFormatted)
-        .attr("href", "www.prashant.me/");
-    }
-  });
-};
-
-// Get the new one.
-getSetLastFM();
-// Start the countdown.
-setInterval(getSetLastFM, 10 * 1000);
-</script>
+Click <a href="/home.html">here</a> in order to enter.
+</div>
+<img src="/assets/art/2024/dehaas_main.png" style="width:200px; z-index:11; position:absolute; top:200px; left:-10px;">
+</div>
+  </center>
 </body>
