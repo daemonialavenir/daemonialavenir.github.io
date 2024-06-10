@@ -1,0 +1,36 @@
+body {
+    width: 800px;
+    position: relative;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: "Meiryo", "Osaka", "SF Pro", sans-serif; 
+ font-size:14px;
+    color:#295d97;
+ 
+    }
+    .main{
+        padding:5px;
+        border:2px groove rgb(55, 148, 255);
+        background-color: white;
+        border-radius:5px;
+        width:765px;
+        text-align: center;
+        position:relative;
+        top:-5px;
+    }
+
+    .districtinfo{
+        width:740px;
+        padding:10px;
+        border:1px solid blue;
+        border-radius: 3px;;
+        text-align: left;
+    }
+
+    summary{
+        font-weight: bold;
+    }
+    .title{
+        text-align: center;
+    }
